@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="BudgetBuddy.png" alt="BudgetBuddy Logo">
+            <span>BudgetBuddy</span>
+            <ul>
+                <li><a href="homepage.html">Dashboard</a></li>
+                <li><a href="addexpense.html">Add Expense</a></li>
+                <li><a href="editbudget.html">Edit Budget</a></li>
+                <li><a href="goals.html">Goals</a></li>
+            </ul>
+            <img src="user.png" alt="User profile">
+        </nav>
+    </header>
+
+    <main>
+        <div id="greetings">
+            <h1>Set your goals.</h1>
+        </div>
+        <section id="container">
+            <form action="submit-data.php">
+                <label for="goal-name">Enter your goal: </label>
+                <input type="text" id="goal-name" name="goal-name" required>
+
+                <label for="target-budget">Target Budget: </label>
+                <input type="text" id="goal-name" name="taget-budget" required>
+
+                <label for="date">Date: </label>
+                <input type="date" id="date" name="date" required>
+            </form>
+        </section>
+
+        <section id="your-goals">
+            <h3>Your Goals</h3>
+            <div id="goal-item">
+                <ol>
+                    <li id="wishlist">Wishlist</li>
+                    <li id="target-budget">Target Budget</li>
+                    <li id="date">Date</li>
+                </ol>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
